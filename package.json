@@ -1,0 +1,16 @@
+{
+  "name": "portforge",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Interactive port encyclopedia, firewall rule documentation builder, and safe rule generator",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "api": "cd backend && .venv/bin/uvicorn main:app --reload --port 8788",
+    "start": "npm run build && cd backend && .venv/bin/uvicorn main:app --port 8788"
+  },
+  "devDependencies": {
+    "playwright": "^1.62.1"
+  }
+}
